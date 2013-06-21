@@ -3,17 +3,19 @@ namespace :assets do
   ASSETS_DIR = 'assets'
   RESOURCES_DIR = "res"
   IMAGE_ASSETS_DIR = "#{ASSETS_DIR}/images"
+  DRAWABLE_DIR = "#{RESOURCES_DIR}/drawable"
   
   RESOLUTIONS = ['ldpi', 'mdpi', 'hdpi', 'xhdpi']
 
   desc " -- create assets directories for images (all resolutions)"
   task :init do
-    `mkdir -pv #{ASSETS_DIR}` if !File.directory?(ASSETS_DIR)
-    `mkdir -pv #{IMAGE_ASSETS_DIR}` if !File.directory?(IMAGE_ASSETS_DIR)
+    `mkdir -pv #{ASSETS_DIR}` if !File.directory? ASSETS_DIR
+    `mkdir -pv #{IMAGE_ASSETS_DIR}` if !File.directory? IMAGE_ASSETS_DIR
     RESOLUTIONS.each do |resolution|
       dir = "#{IMAGE_ASSETS_DIR}/#{resolution}"
-      `mkdir -pv #{dir}` if !File.directory?(dir)
+      `mkdir -pv #{dir}` if !File.directory? dir
     end
+    `mkdir -pv #{DRAWABLE_DIR}` if !File.directory? DRAWABLE_DIR
   end
 
   desc " -- optimize and promote assets to app resources"
