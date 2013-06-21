@@ -9,7 +9,11 @@ task :help do
 end
 
 desc " -- bootstrap all media and utilities"
-task :bootstrap => ['assets:init']
+task :bootstrap => [
+  'assets:init',
+  'license',
+  'build_properties'
+]
 
 desc " -- setup release items"
 task :release => ['release:prepare']
@@ -17,4 +21,9 @@ task :release => ['release:prepare']
 desc " -- generates MIT-LICENSE"
 task :license do
   `cp #{libdir}/MIT-LICENSE MIT-LICENSE`
+end
+
+desc " -- generates build.properties"
+task :build_properties do
+  `cp #{libdir}/build.properties build.properties`
 end
