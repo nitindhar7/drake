@@ -16,3 +16,8 @@ Add the following symlink:
 Run `bootstrap` to setup assets, license file, build properties, etc:
 
     rake bootstrap
+
+### TODO
+
+- Extend Drake to be a generic installtion package
+  - git bash completion
