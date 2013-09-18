@@ -1,0 +1,60 @@
+sudo apt-get install apache2 apache2-doc apache2-utils
+sudo apt-get install libapache2-mod-ruby
+sudo apt-get build-dep build-essential
+sudo apt-get install imagemagick imagemagick-common
+sudo apt-get install ruby-rmagick
+sudo apt-get install graphicsmagick-libmagick-dev-compat
+sudo apt-get install libjpeg-turbo-progs
+sudo apt-get install tree
+sudo apt-get install mysql-client-core-5.5
+sudo apt-get install libmysqlclient15-dev
+sudo apt-get install mysql-server
+sudo apt-get clean && sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install libapr1-dev
+sudo apt-get install aptitude
+sudo apt-get -f install
+sudo apt-get clean all
+sudo apt-get autoremove
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install libaprutil1-dev
+sudo apt-get install apache2-prefork-dev
+sudo apt-get install libcurl4-openssl-dev
+passenger-install-apache2-module
+sudo gem install bundler
+sudo apt-get install capistranosudo apt-get install ia32-libs
+sudo apt-get install ant
+sudo apt-get install maven
+sudo apt-get install gimp
+sudo apt-get install unrar
+sudo apt-get install optipng
+cd /usr/src/
+sudo wget http://c758482.r82.cf2.rackcdn.com/Sublime\ Text\ 2.0.1.tar.bz2
+sudo tar -xvf Sublime\ Text\ 2.0.1.tar.bz2
+sudo mv Sublime\ Text\ 2 SublimeText2
+sudo nano /usr/share/applications/SublimeText2.desktop
+[Desktop Entry]
+Version=2.0.1
+Type=Application
+Terminal=false
+StartupNotify=true
+Icon=/usr/src/SublimeText2/Icon/48x48/sublime_text.png
+Name=Sublime Text 2
+Comment=Programming IDE
+Exec=/usr/src/SublimeText2/sublime_text
+Categories=Application;Development;
+sudo nano ~/.local/share/applications/defaults.list
+[Default Applications]
+text/css=SublimeText2.desktop
+text/x-python=SublimeText2.desktop
+text/html=SublimeText2.desktop
+application/x-php=SublimeText2.desktop
+application/x-ruby=SublimeText2.desktop
+application/x-perl=SublimeText2.desktop
+application/javascript=SublimeText2.desktop
+sudo apt-get install compiz-fusion-plugins-extra
+sudo apt-get install compizconfig-settings-manager wmctrl
+sudo apt-get install scala
+sudo add-apt-repository ppa:birdie-team/stable
+sudo apt-get update && sudo apt-get install birdie
