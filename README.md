@@ -7,7 +7,7 @@ Drake simplifies day-to-day infrastructure tasks we all encounter repetitively w
 
 *AD HOC*
 
-    # Just run `rake -T` for a list of all tasks and their descriptions
+Just run `rake -T` for a list of all tasks and their descriptions:
 
     $ rake -T
 	rake android:assets:init             # -- create assets directories for images (all resolutions)
@@ -22,7 +22,7 @@ Drake simplifies day-to-day infrastructure tasks we all encounter repetitively w
 
 *In Existing Projects*
 
-    # Add `drake` as a _submodule_ to your existing app:
+Add `drake` as a _submodule_ to your existing app:
 
     $ git submodule add git@github.com:nitindhar7/drake.git drake
 
@@ -66,9 +66,9 @@ The install command is quite dumb and all it does is it runs a command and appen
 
 ### Features
 
-* Capture output of `rake core:install[command, registry]` and store it somewhere
-* add support for .dotfiles/.bootfiles
+[ ] Capture output of `rake core:install[command, registry]` and store it somewhere
+[ ] add support for .dotfiles/.bootfiles
 
 ### TODO
 
-* gem-ify
+[ ] gem-ify
