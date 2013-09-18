@@ -5,7 +5,7 @@ Drake simplifies day-to-day infrastructure tasks we all encounter repetitively w
 
 ### Using Drake
 
-1. Ad Hoc
+*AD HOC*
 
     # Just run `rake -T` for a list of all tasks and their descriptions
 
@@ -20,7 +20,7 @@ Drake simplifies day-to-day infrastructure tasks we all encounter repetitively w
 	rake core:install[command,registry]  # -- executes installation commands and saves them to the configured registry (eg: rake core:install["sudo apt-get install ant, ~/ndhar/.install"])
 	rake core:license                    # -- generates a MIT-LICENSE template
 
-2. In Existing Projects
+*In Existing Projects*
 
     # Add `drake` as a _submodule_ to your existing app:
 
