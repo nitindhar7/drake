@@ -67,6 +67,7 @@ The install command is quite dumb and all it does is it runs a command and appen
 ### Features
 
 * Capture output of `rake core:install[command, registry]` and store it somewhere
+* add support for .dotfiles/.bootfiles
 
 ### TODO
 
